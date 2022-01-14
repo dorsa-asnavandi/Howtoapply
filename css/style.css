@@ -1,0 +1,1020 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: BNazanin, serif;
+}
+
+.direct {
+    direction: rtl;
+}
+
+.border-test {
+    border: 1px solid black;
+}
+
+.clear {
+    clear: both;
+}
+
+/* header sec */
+.blog-header {
+    border-bottom: 1px solid #eeeeee;
+    background-color: #fefefe;
+}
+.logoHeader img{
+    width: 20%;
+}
+.logoHeader{
+    margin:15px 0;
+}
+
+.navbar-style {
+    background-color: transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.navbar-item-style li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(230, 30, 30, 0.7);
+}
+
+.navbar-item-style li {
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.navbar-item-style li:hover {
+    margin: 0 4px;
+}
+
+.navbar-item-style li:hover a {
+    color: rgba(255, 30, 30, 1);
+}
+
+.navbar-item-style li a span {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.responsiveNavBtn{
+    margin: 5px auto;
+    display: none;
+    text-align: center;
+    padding: 4px 10px 2px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.responsiveNavBtn:hover{
+    background-color: #e64040;
+    color: #ffffff;
+    cursor: pointer;
+}
+.nav-bottom{
+    display: block;
+}
+.nav-bottom li{
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.nav-bottom li a{
+    display: block;
+    border-bottom: 1px solid #e64040;
+    color: #e64040 !important;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+.nav-bottom li a:hover{
+    text-decoration: none;
+    color: #A00909;
+}
+.nav-bottom li span{
+    color: #ccc;
+}
+.nav-bottom li span:after{
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color:#ccc ;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.nav-bottom li span:before{
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color:#ccc ;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+@media all and (max-width: 768px) {
+
+    .logoHeader img{
+        width: 40%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .responsiveNavBtn{
+        display: block;
+        float: right;
+    }
+
+    .nav-bottom{
+        display: none;
+    }
+    .nav-bottom li{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .nav-bottom li a{
+        display: block;
+        border-bottom: 1px solid #e64040;
+        color: #ff0000 !important;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    .nav-bottom li span{
+        color: #ccc;
+    }
+    .nav-bottom li span:after{
+        content: "";
+        width: 30%;
+        height: 1px;
+        background-color:#ccc ;
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .nav-bottom li span:before{
+        content: "";
+        width: 30%;
+        height: 1px;
+        background-color:#ccc ;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+}
+@media all and (max-width: 480px) {
+    .navbar-item-style li {
+        padding: 0;
+    }
+
+    .navbar-item-style li a {
+        font-size: 12px;
+    }
+
+    .navbar-item-style li:hover {
+        margin: 0 2px;
+    }
+}
+
+
+/* header */
+.bg-header {
+    background-image: url("../img/patternBg/bgmain.png");
+    padding: 20px 0;
+    box-shadow: 0 3px 5px 0 #999;
+    width: 100%;
+}
+
+.headingHeader {
+    text-align: center;
+}
+
+.headingHeader h1 {
+    font-family: MjDinar, BNazanin, Arial;
+    font-size: 36px;
+    color: #e64040;
+}
+
+.headingHeader span {
+    font-family: MjDinar;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.headingAlter {
+    display: none;
+}
+
+.headingAlter a {
+    display: block;
+    color: #e64040;
+    font-size: 20px;
+    border: 1px solid #e64040;
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 5px 0;
+}
+
+.headingAlter a:hover {
+    text-decoration: none;
+    background-color: #e64040;
+    color: #eeeeee;
+    transition: 0.2s;
+}
+
+/* hexagon */
+.hexagon {
+    position: relative;
+    width: 300px;
+    height: 173.21px;
+    margin: 100.60px auto;
+    background-size: auto 346.4102px;
+    background-position: center;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+
+.hexTop,
+.hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 212.13px;
+    height: 212.13px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 43.93px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
+
+.overlayHex {
+    position: absolute;
+    top: -87px;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+}
+
+.overlayCenter {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.overlayCenter {
+    padding: 30px 5px;
+    box-sizing: border-box;
+}
+
+.overlayCenter h3 {
+    color: #eeeeee;
+    margin-bottom: 20px;
+}
+
+.overlayCenter i {
+    display: block;
+    color: #eeeeee;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.overlayCenter span {
+    display: block;
+    color: #eeeeee;
+    font-size: 20px;
+}
+
+.overlayTop {
+    width: 0;
+    border-bottom: 87px solid rgba(0, 0, 0, 0);
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+.overlayBottom {
+    width: 0;
+    border-top: 88px solid rgba(0, 0, 0, 0);
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+.hexagon:hover .overlayHex {
+    transform: scale(0.9, 0.9);
+    transition: 0.3s;
+    top: -78px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hexagon:hover .overlayCenter {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.hexagon:hover .overlayTop {
+    border-bottom: 87px solid rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.hexagon:hover .overlayBottom {
+    border-top: 88px solid rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 300.0000px;
+    height: 173.20508075688775px;
+    -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+    -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+    transform: rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+}
+
+.hexTop {
+    top: -106.0660px;
+}
+
+.hexTop:after {
+    background-position: center top;
+}
+
+.hexBottom {
+    bottom: -106.0660px;
+}
+
+.hexBottom:after {
+    background-position: center bottom;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    top: 0.0000px;
+    left: 0;
+    width: 300.0000px;
+    height: 173.2051px;
+    z-index: 2;
+    background: inherit;
+}
+
+/* hex num */
+.hexagon0 {
+    background-image: url("../img/grunge-world-map.jpg");
+}
+
+.hexagon1 {
+    margin-top: -274px;
+    left: -310px;
+    background-image: url("../img/flag/Canada.jpeg");
+}
+
+.hexagon2 {
+    margin-top: -274px;
+    left: 310px;
+    background-image: url("../img/flag/1470332956312.png");
+}
+
+.hexagon3 {
+    margin-top: -4px;
+    left: 155px;
+    background-image: url("../img/flag/map-of-australia-3d-model-max-obj-3ds.jpg");
+}
+
+.hexagon4 {
+    margin-top: -274px;
+    left: -155px;
+    background-image: url("../img/flag/Malaysia.jpg");
+}
+
+.hexagon5 {
+    margin-top: 100px;
+    left: -155px;
+    background-image: url("../img/apply.jpg");
+}
+
+.hexagon6 {
+    margin-top: -274px;
+    left: 155px;
+    background-image: url("../img/flag/shutterstock_92325316-2.jpg");
+}
+
+@media screen and (max-width: 992px) {
+
+    .headingHeader h1 {
+        font-size: 30px;
+    }
+
+    .hexagon1 {
+        margin-top: -4px;
+        left: -155px;
+    }
+
+    .hexagon2 {
+        margin-top: -274px;
+        left: 155px;
+        background-image: url("../img/flag/1470332956312.png");
+    }
+
+    .hexagon3 {
+        margin-top: -4px;
+        left: 0px;
+        background-image: url("../img/flag/map-of-australia-3d-model-max-obj-3ds.jpg");
+    }
+
+    .hexagon4 {
+        margin-top: -4px;
+        left: -155px;
+        background-image: url("../img/flag/Malaysia.jpg");
+    }
+
+}
+
+@media screen and (max-width: 640px ) {
+
+    .hexagon0 {
+        background-image: url("../img/grunge-world-map.jpg");
+        left: 0px;
+        margin-top: 175px;
+    }
+
+    .hexagon1 {
+        margin-top: 175px;
+        left: 0px;
+        background-image: url("../img/flag/Canada.jpeg");
+    }
+
+    .hexagon2 {
+        margin-top: 175px;
+        left: 0px;
+        background-image: url("../img/flag/1470332956312.png");
+    }
+
+    .hexagon3 {
+        margin-top: 175px;
+        left: 0px;
+        background-image: url("../img/flag/map-of-australia-3d-model-max-obj-3ds.jpg");
+    }
+
+    .hexagon4 {
+        margin-top: 175px;
+        left: 0px;
+        background-image: url("../img/flag/Malaysia.jpg");
+    }
+
+    .hexagon5 {
+        margin-top: 100px;
+        left: 0;
+        background-image: url("../img/apply.jpg");
+    }
+
+    .hexagon6 {
+        margin-top: 175px;
+        left: 0px;
+        background-image: url("../img/flag/shutterstock_92325316-2.jpg");
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hexagonControl {
+        display: none;
+    }
+
+    .headingAlter {
+        display: block;
+    }
+}
+
+/* whyGoSec */
+.whyGoSec {
+    padding: 50px 0;
+}
+
+.headingWhy {
+    text-align: center;
+    color: #e64040;
+    margin-bottom: 30px;
+}
+
+.headingSec {
+    font-size: 32px;
+    text-shadow: 1px 1px 0 #666;
+    font-family: MjDinar, BNazanin, Arial;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto 40px auto;
+    color: #e64040;
+    width: 50%;
+}
+
+.headingSec:after {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(to right, #fafafa 10%, #f0aaaa 30%, #ff0000 120%);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 42px;
+}
+
+.headingSec:before {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(to left, #fafafa 10%, #f0aaaa 30%, #ff0000 120%);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 42px;
+}
+
+@media screen and (max-width: 768px) {
+    .headingSec:after, .headingSec:before {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .headingSec:after, .headingSec:before {
+        width: 10%;
+    }
+
+    .headingSec {
+        width: 80%;
+    }
+}
+
+.headingWhy h4 {
+    font-size: 26px;
+}
+
+.box {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.roundedBox {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #f09090;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    text-align: center;
+    padding: 40px 35px;
+    box-shadow: 0 0 2px 0 #f09090;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlayRoundedBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 30px;
+}
+
+.roundedBox:hover .overlayRoundedBox {
+    width: 95%;
+    height: 180px;
+    margin: 2.5%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.roundedBox h4 {
+    font-size: 26px;
+    color: #444444;
+    display: inline-block;
+}
+
+.roundedBox h5 {
+    font-size: 20px;
+    color: #666;
+}
+
+.roundedBox > span {
+    font-size: 22px;
+    margin-left: 3px;
+    color: #444444;
+    display: inline-block;
+}
+
+.overlayRoundedBox > span {
+    color: #e0e0e0;
+    font-size: 20px;
+}
+
+.overlayRoundedBox > i {
+    color: #eeeeee;
+    font-size: 20px;
+    display: block;
+}
+
+/* you need */
+.bgBoxNeed {
+    overflow: hidden;
+}
+
+.bgMan img {
+    margin-top: 40px;
+    width: 90%;
+}
+
+.boxNeeds {
+    text-align: center;
+}
+
+.boxNeed {
+    width: 93%;
+    height: 150px;
+    border: 1px solid #e0e0e0;
+    padding: 25px 30px 30px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.boxNeed:nth-child(1) {
+    margin-top: 120px;
+}
+
+@media screen and (max-width: 992px) {
+    .boxNeed:nth-child(1) {
+        margin-top: 0px;
+    }
+}
+
+.boxNeed {
+    direction: rtl;
+    transition: 0.3s;
+}
+
+.boxNeed h5 {
+    color: #555;
+    font-weight: bold;
+}
+
+.boxNeed h6 {
+    font-size: 18px;
+    margin-top: -5px;
+    color: #999999;
+}
+
+.boxNeed p {
+    font-size: 16px;
+    color: #999999;
+}
+
+.smallBoxIcon {
+    position: absolute;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #e3e3e3;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.boxNeedL .smallBoxIcon {
+    right: -60px;
+    padding: 20px 20px;
+}
+
+.boxNeedR .smallBoxIcon {
+    left: -60px;
+    padding: 20px 10px;
+}
+
+.smallBoxIcon span {
+    font-size: 40px;
+    color: #999999;
+}
+
+.boxNeedL .smallBoxIcon:after {
+    position: absolute;
+    top: -9px;
+    left: 0px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10px 20px;
+    border-color: transparent transparent #cecece transparent;
+}
+
+.boxNeedR .smallBoxIcon:after {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 0 20px;
+    border-color: transparent transparent transparent #cecece;
+}
+.boxNeed:hover {
+    border: 1px solid #e64040;
+    cursor: pointer;
+}
+
+.boxNeed:hover .smallBoxIcon {
+    background-color: #e64040;
+    border-color: #e640404;
+}
+
+.boxNeed:hover .smallBoxIcon span {
+    color: #eeeeee;
+}
+
+.boxNeedL:hover .smallBoxIcon:after {
+    border-color: transparent transparent #e62020 transparent;
+    transition: 0.3s;
+
+}
+
+.boxNeedR:hover .smallBoxIcon:after {
+    border-color: transparent transparent transparent #e62020;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px){
+    .boxNeedR .smallBoxIcon{
+        right: -60px;
+    }
+    .boxNeedR .smallBoxIcon:after{
+        right: 59px;
+        border-width: 0 0 10px 20px;
+        border-color: transparent transparent #cecece transparent;
+    }
+    .boxNeedR:hover .smallBoxIcon:after{
+        border-color: transparent transparent #e62020 transparent;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .boxNeed {
+        width: 85%;
+    }
+}
+
+/* blog section */
+.blogSec {
+    padding: 50px 0;
+}
+
+.blogPost {
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.imgBlogControl {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgBlogControl img {
+    width: 100%;
+    height: 100%;
+}
+
+.tagControl {
+    margin: 10px 0;
+    display: block;
+    text-align: right;
+}
+
+.tagControl div {
+    text-align: center;
+    display: inline-block;
+    background-color: #e64040;
+    color: #e0e0e0;
+    padding: 0 15px;
+    border-radius: 2px;
+    border: 1px solid #e64040;
+}
+
+.tagControl div:hover {
+    background-color: #ffffff;
+    color: #e64040;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.captionControl {
+    direction: rtl;
+    text-align: right;
+}
+
+.captionControl h2 {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #444;
+}
+
+.captionControl p {
+    font-size: 18px;
+    color: #777777;
+}
+
+/* Footer section */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #2b2c30;
+}
+
+.content-form {
+    color: #dae0e5;
+}
+
+.text-form {
+    font-size: 50px;
+    text-align: center;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    background-color: #2b2c30;
+    border: none;
+    border-bottom: 1px solid #dae0e5;
+    border-radius: 5px;
+    color: #eee;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+input[type=text], input[type=email]:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #dae0e5;
+}
+
+textarea {
+    width: 100%;
+    background-color: #2b2c30;
+    border: none;
+    border-bottom: 1px solid #eee;
+    border-radius: 5px;
+    color: #eee;
+    padding: 5px;
+}
+
+textarea:focus {
+    box-shadow: none;
+    border-bottom: 1px solid white;
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 50px;
+    background-color: #2b2c30;
+    border: 1px solid #dae0e5;
+    border-radius: 5px;
+    color: #eee;
+}
+
+input[type=submit]:hover {
+    border-radius: 0px;
+    transition: 2s;
+}
+
+
+.content-footer {
+    direction: rtl;
+    text-align: right;
+}
+
+.links, .indexpages, .infous {
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+}
+
+.header-links, .header-pages, .header-infous {
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+.links a, .indexpages a {
+    color: #f0f0f0;
+    transition: 0.5s;
+}
+
+.links a:hover, .indexpages a:hover {
+    color:#e64040;
+    text-decoration: none;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255,53,53,0.5);
+}
+
+.overline {
+    width: 50px;
+    height: 3px;
+    background-color: #e64040;
+}
+
+.links a {
+    display: block;
+    margin-top: 15px;
+}
+
+.links a:hover {
+    color: #e64040;
+}
+
+.indexpages a {
+    display: block;
+    margin-top: 15px;
+}
+
+.indexpages a:hover {
+    color: #e64040;
+}
+
+.information {
+    color: #f0f0f0;
+}
+
+.information a {
+    color: #f0f0f0;
+}
+
+.phoneicon, .homeicon {
+    color: #f0f0f0;
+}
+.ircoding-web:hover{
+    color: #e64040;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.icons {
+    font-size: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+    color: #f0f0f0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icons:hover {
+    color: #e64040;
+    transition: 0.5s;
+}
+
+/* javascript Use */
+.show {
+    opacity: 1;
+    transition: 0.8s;
+}
+
+.hide {
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/* Font */
+@font-face {
+    font-family: 'BNazanin';
+    src: url('../fonts/BNazanin.eot?#') format('eot'), /* IE6–8 */ url('../fonts/BNazanin.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/BNazanin.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+    font-family: 'MjDinar';
+    src: url('../fonts/MjDinarOneLight.ttf') format('truetype'), url("../fonts/MjDinarOneMedium.ttf") format('truetype');
+}

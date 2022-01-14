@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: BNazanin, serif;
+    transition: 0.5s;
+}
+
+.direct {
+    direction: rtl;
+}
+
+.border-test {
+    border: 1px solid black;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    height: auto;
+}
+
+.blog-header {
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar-style {
+    background-color: transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.navbar-item-style li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(230, 30, 30, 0.7);
+}
+
+.navbar-item-style li {
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.navbar-item-style li:hover {
+    margin: 0 4px;
+}
+
+.navbar-item-style li:hover a {
+    color: rgba(255, 30, 30, 1);
+}
+
+.navbar-item-style li a span {
+    font-size: 20px;
+}
+
+@media all and (max-width: 480px) {
+    .navbar-item-style li {
+        padding: 0;
+    }
+
+    .navbar-item-style li a {
+        font-size: 12px;
+    }
+
+    .navbar-item-style li:hover {
+        margin: 0 2px;
+    }
+}
+
+.divider-header {
+    height: 2px;
+    background-color: #f3f3f3;
+}
+
+.social-network {
+    text-align: center;
+    cursor: pointer;
+}
+
+.social-network-item {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.social-network-item span {
+    font-size: 20px;
+    margin: 2px;
+    color: rgba(230, 30, 30, 0.7);
+    transition: 1s;
+}
+
+.social-network-item:hover span {
+    color: red;
+}
+
+.headingWhy {
+    text-align: center;
+    color: #e64040;
+    margin-bottom: 30px;
+}
+
+.headingSec {
+    font-size: 32px;
+    text-shadow: 1px 1px 0 #666;
+    font-family: MjDinar, BNazanin, Arial;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto 40px auto;
+    color: #e64040;
+    width: 50%;
+}
+
+.headingSec:after {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(to right, #fafafa 10%, #f0aaaa 30%, #ff0000 120%);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 42px;
+}
+
+.headingSec:before {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: linear-gradient(to left, #fafafa 10%, #f0aaaa 30%, #ff0000 120%);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 42px;
+}
+
+@media screen and (max-width: 768px) {
+    .headingSec:after, .headingSec:before {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .headingSec:after, .headingSec:before {
+        width: 10%;
+    }
+
+    .headingSec {
+        width: 80%;
+    }
+}
+
+.headingWhy h4 {
+    font-size: 26px;
+}
+
+
+
+
+@media all and (max-width: 480px) {
+    .right-service {
+        width: 50%;
+    }
+}
+
+.part-1 {
+    height: auto;
+    margin-top: 40px;
+}
+
+.right-content {
+    width: 100%;
+    height: 330px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.left-content {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.left-content figure{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.left-content figure img{
+    width: 100%;
+}
+.left-content figcaption{
+  position: absolute;
+  top:3.5%;
+  left: 3%;
+}
+
+.child {
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-align: right;
+    padding:10px 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.child-child{
+  display: none;
+}
+
+.child-right {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.redli{
+    background-color: #e64040;
+    color: white;
+}
+.tabson{
+    background-color: #FAFAFA;
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #2b2c30;
+}
+
+
+.content-footer {
+    direction: rtl;
+    text-align: right;
+}
+
+.links, .indexpages, .infous {
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+}
+
+
+.header-links, .header-pages, .header-infous {
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+.links a, .indexpages a {
+    color: #f0f0f0;
+    transition: 0.5s;
+}
+
+.links a:hover, .indexpages a:hover {
+    color:#e64040;
+    text-decoration: none;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255,53,53,0.5);
+}
+
+.overline {
+    width: 50px;
+    height: 3px;
+    background-color: #e64040;
+}
+
+.links a {
+    display: block;
+    margin-top: 15px;
+}
+
+.links a:hover {
+    color: #e64040;
+}
+
+.indexpages a {
+    display: block;
+    margin-top: 15px;
+}
+
+.indexpages a:hover {
+    color: #e64040;
+}
+
+.information {
+    color: #f0f0f0;
+}
+
+.information a {
+    color: #f0f0f0;
+}
+
+.phoneicon, .homeicon {
+    color: #f0f0f0;
+}
+.ircoding-web:hover{
+    color: #e64040;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.icons {
+    font-size: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+    color: #f0f0f0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icons:hover {
+    color: #e64040;
+    transition: 0.5s;
+}
+/* Font */
+@font-face {
+    font-family: 'BNazanin';
+    src: url('../fonts/BNazanin.eot?#') format('eot'), /* IE6–8 */ url('../fonts/BNazanin.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/BNazanin.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+    font-family: 'MjDinar';
+    src: url('../fonts/MjDinarOneLight.ttf') format('truetype'), url("../fonts/MjDinarOneMedium.ttf") format('truetype');
+}
